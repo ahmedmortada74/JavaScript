@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Institute of Information Technology</title>
+    <meta charset="utf-8">
+    <style>
+        #hamo {
+            margin-left: 100px;
+            margin-right: 500px;
+            border-radius: 70px;
+        }
+
+        #hh {
+            margin-top: 500px;
+        }
+
+        .g {
+            display: inline;
+            background-color: rgb(32, 35, 68);
+        }
+
+        .g img {
+            width: 200px;
+            height: 100px;
+            margin: 5px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-top: 60px;
+            opacity: 1;
+            transition: opacity 0.5s;
+            border-radius: 7px;
+        }
+
+        .g img:hover {
+            opacity: 0.1;
+        }
+
+        #form {
+            /* display: ; */
+        }
+
+        body {
+            background-image: url(./front\ iti.jpeg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        fieldset {
+            align-content: center;
+            text-align: center;
+            width: 120px;
+            backdrop-filter: blur(5px);
+            margin-left: 515px;
+        }
+
+        .lab {
+            /* width: 100px; */
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form" action="./asmaa/aaassss.html" method="get" id="hamo" align ="left">
+        <fieldset style="border-radius: 20px;">
+            <legend align="center" id="hh">Registration Form</legend>
+            <br>
+            <input type="text" id="User" name="User" placeholder="Enter your ID" style="border-radius: 5px;" required>
+            <br><br>
+            <input type="text" id="Firstname" name="Firstname" placeholder="Enter your Name" style="border-radius: 5px;">
+            <br><br>
+            <input type="email" id="email" name="email" placeholder="name**22@gmail.com" style="border-radius: 5px;" required>
+            <br><br>
+            <input type="password" id="password" name="password" placeholder="password" style="border-radius: 5px;" required>
+            <br><br>
+            Gender:
+            <input type="radio" id="male" name="Gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="Gender" value="Female">
+            <label for="female">Female</label>
+            <p>Choose the track</p>
+            <select name="track" style="border-radius: 5px;">
+                <option value="front end">Front End</option>
+                <option value="software engineering fundamental">Software Engineering Fundamental</option>
+                <option value="system admin">System Admin</option>
+                <option value="engineering">Engineering</option>
+                <option value="back end">Back End</option>
+                <option value="power PI">Power PI</option>
+                <option value="graphic 2d">Graphic 2D</option>
+                <option value="graphic 3d">Graphic 3D</option>
+                <option value="ccna">CCNA</option>
+                <option value="network">Network</option>
+            </select>
+            <br> <br>
+            <input type="checkbox" accesskey="k" id="terms">
+            <label for="terms"><a href="https://iti.gov.eg/iti/news/details/58" target="_blank">I agree the Terms and Conditions</a></label>
+            <br><br>
+            <a href="./page3.html" target="_blank"><input type="submit" value="Submit"></a>
+            <input type="reset" value="Reset">
+        </fieldset>
+    </form>
+    <br>
+    <br>
+    <div class="g" style="width: 100px; height: 900px;">
+        <img src="./iti1.jpg" alt="Image 1">
+        <img src="./front iti.jpeg" alt="Image 2">
+        <img src="./network lap.jpeg" alt="Image 3">
+        <img src="./second floor.jpeg" alt="Image 4">
+        <img src="./big room.jpg" alt="Big Room">
+    </div>
+    <script>
+        var inputUser = document.getElementById("User");
+        inputUser.style.width = "150px";
+        inputUser.style.height = "30px";
+        var images = document.querySelectorAll(".g img");
+
+        var inputemail = document.getElementById("email");
+        inputemail.style.width = "150px";
+        inputemail.style.height = "30px";
+
+        var inputpassword = document.getElementById("password");
+        inputpassword.style.width = "150px";
+        inputpassword.style.height = "30px";
+
+        var inputFirstname = document.getElementById("Firstname");
+        inputFirstname.style.width = "150px";
+        inputFirstname.style.height = "30px";
+
+        images.forEach(function (image) {
+            image.addEventListener("mouseenter", function () {
+                this.style.opacity = "0.1";
+                document.body.style.backgroundImage = "url(" + this.src + ")";
+            });
+
+            image.addEventListener("mouseleave", function () {
+                this.style.opacity = "1";
+            });
+        });
+    </script>
+</body>
+
+</html>

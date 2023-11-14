@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    firstname: <input type="text" id="name">  <br />
+    Password:<input type="password" id="pass" >
+    <br />
+    <button id="login" style="background-color: brown;">Login </button>
+    <button id="logout" style="background-color: aquamarine;" >Logout</button>
+    <button id="update" style="background-color: blanchedalmond;">Update </button>
+    <button id="get" style="background-color: cadetblue;">Get</button>
+
+<script>
+
+var btnLogin = document.getElementById("login");
+
+    var btnLogout = document.getElementById("logout");
+    var btnUpdate = document.getElementById("update");
+    var btnGet = document.getElementById("get");
+    
+    btnLogin.onclick = function(){
+    var name = document.getElementById("name").value;
+        var pass = document.getElementById("pass").value;
+        var date = new Date();
+        var dat = date.getDate() + 3;
+        date.setDate(dat);
+  
+        document.cookie = "name="+name+";expire="+date;
+        document.cookie = "password="+pass+";expire="+date;
+    }
+    btnLogout.onclick = function(){
+        var date = new Date();
+        var dat = date.getDate() - 3;
+        date.setDate(dat);
+    
+        document.cookie = "name=;expires="+date;
+        document.cookie = "password=;expires="+date;
+    }
+    btnUpdate.onclick = function(){
+        var name = document.getElementById("name").value;
+        var pass = document.getElementById("pass").value;
+        document.cookie = "name="+name;
+        document.cookie = "password="+pass;
+    }
+    btnGet.onclick = function(){
+
+        var cookie = document.cookie;
+        var split = cookie.split(";"); 
+        var username = split[0].split("=");
+        var password = split[1].split("=");
+    
+        document.getElementById("name").value = username[1];
+        document.getElementById("pass").value = password[1];
+
+    }
+</script>
+</body>
+</html>

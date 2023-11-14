@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Institute of Information Technology</title>
+</head>
+
+<body>
+    <div id="header" style="background-color: #004e9e; color: #ffffff; text-align: center; padding: 20px;">
+        <h1>About Creativia</h1>
+    </div>
+
+    <div id="content"
+        style="display: flex; flex-direction: column; align-items: center; padding: 20px; background-color: #f2f2f2;">
+        <div id="images" style="display: flex; flex-wrap: wrap; justify-content: center;">
+            <img id="img1" src="./IMG-20231002-WA0002.jpg" alt=""
+                style="width: 150px; height: 150px; margin: 10px; border-radius: 50%; transition: transform 0.3s; opacity: 0.8; cursor: pointer;">
+            <img id="img2" src="./IMG-20231002-WA0003.jpg" alt=""
+                style="width: 150px; height: 150px; margin: 10px; border-radius: 50%; transition: transform 0.3s; opacity: 0.8; cursor: pointer;">
+            <img id="img3" src="./IMG-20231002-WA0004.jpg" alt=""
+                style="width: 150px; height: 150px; margin: 10px; border-radius: 50%; transition: transform 0.3s; opacity: 0.8; cursor: pointer;">
+            <img id="img4" src="./IMG-20231002-WA0008.jpg" alt=""
+                style="width: 150px; height: 150px; margin: 10px; border-radius: 50%; transition: transform 0.3s; opacity: 0.8; cursor: pointer;">
+            <img id="img5" src="./IMG-20231002-WA0007.jpg" alt=""
+                style="width: 150px; height: 150px; margin: 10px; border-radius: 50%; transition: transform 0.3s; opacity: 0.8; cursor: pointer;">
+        </div>
+
+        <div id="about"
+            style="padding: 20px; text-align: center; background-color: #ffffff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 5px; margin-top: 20px;">
+            <h2 style="color: #7e0505;">Our Story</h2>
+            <p>
+                Seshat, was the ancient Egyptian goddess of wisdom, knowledge, and writing. She was seen as a scribe and
+                record keeper, and her name means she who scrivens (i.e. she who is the scribe), and is credited with
+                inventing writing. She also became identified as the goddess of accounting, architecture,
+                astronomy, astrology, building, mathematics, and surveying.
+                In art, she was depicted as a woman with a seven-pointed emblem above her head. It is unclear what this
+                emblem represents. This emblem is the origin of an alternate name for Seshat, Sefkhet-Abwy,
+                which means “seven-horned”.
+                Mistress of the House of Books is another title for Seshat, being the deity whose priests oversaw the
+                library in which scrolls of the most important knowledge were assembled and spells were preserved. One
+                prince of the Fourth Dynasty, Wep-em-nefret, is noted as the Overseer of the Royal Scribes, Priest of
+                Seshat on a slab stela. Heliopolis was the location of her principal sanctuary. She also was responsible
+                for recording the speeches the pharaoh made during the crowning ceremony and approving the inventory of
+                foreign captives and goods gained in military campaigns. During the New Kingdom, she was involved in the
+                Sed festival held by the pharaohs who could celebrate thirty years of
+                reign."</p>
+            <iframe id="video" width="560" height="315"
+                src="https://www.youtube.com/embed/rbe7k_pCwg4?si=u9hS9UVGl-ujEDyg" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
+
+        <div id="news"
+            style="background-color: #ffffff; padding: 20px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); border-radius: 5px; margin-top: 20px;">
+            <h2>New</h2>
+            <div class="news-item">
+                <h3>Creativia Egypt Joins Forces with Creativia Agency</h3>
+                <p>Together, we envision taking creativity and digital innovation to new heights. With a shared
+                    commitment to
+                    excellence, we will offer clients a diverse range of services, from digital marketing and branding
+                    to web
+                    development and creative design.</p>
+                <p>We are excited about this collaboration and the endless possibilities it holds. Stay tuned for more
+                    updates on
+                    the exciting projects and campaigns that will emerge from this dynamic partnership.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer" style="background-color: #004e9e; color: #ffffff; text-align: center; padding: 20px;">
+        <a href="https://creativa.gov.eg/services/" class="button1"
+            style="text-decoration: none; color: #ffffff; padding: 10px 20px; background-color: #063970; border-radius: 5px; transition: background-color 0.3s;">services</a>
+        <a href="https://www.google.com/maps?ll=26.189503,32.74696&z=18&t=h&hl=en-US&gl=US&mapclient=embed&cid=15839941409956781804"
+            class="button"
+            style="text-decoration: none; color: #ffffff; padding: 10px 20px; background-color: #063970; border-radius: 5px; transition: background-color 0.3s;">
+            location</a>
+    </div>
+
+    <script>
+        var images = document.querySelectorAll("#images img");
+        var video = document.getElementById("video");
+
+        // Add hover effect to images using JavaScript
+        images.forEach(function (img) {
+            img.addEventListener("mouseover", function () {
+                img.style.transform = "scale(1.9)";
+                img.style.cursor = "pointer";
+                img.style.opacity = "1";
+            });
+
+            img.addEventListener("mouseout", function () {
+                img.style.transform = "scale(1)";
+                img.style.cursor = "default";
+                img.style.opacity = "0.8";
+            });
+        });
+    </script>
+</body>
+
+</html>

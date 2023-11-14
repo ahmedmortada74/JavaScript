@@ -1,0 +1,108 @@
+/* body {
+    background-image: url("./iti1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+/* } */
+/* nav { */
+    /* float: left; */
+    /* width:1290px; */
+    /* height: 30px; only for demonstration, should be removed */
+    /* background: #2C3333; */
+    /* padding: 20px; */
+    /* text-align: center; */
+    /* font-size: 20px; */
+    /* border-radius: 5px; */
+    /* color: #f3c74f; */
+
+  /* }
+  ul
+  {
+    list-style: none;padding:0;margin:0;
+    margin-right: 50px;
+    margin-left: 950px;
+  }
+  ul li
+  {
+    isplay: inline-block; padding: 8px; */
+    /* box-shadow: 5px; */
+
+  /* }
+  #aaa li :hover{
+    background-color:#f3c74f;
+    border-radius:60px;
+    padding: 10px ;
+} */
+/* .footer
+{
+    background: #805d5d;
+    color: rgb(88, 33, 33);
+    text-align: center;
+    padding: 10px 0
+} */
+/* ///////////////////// */
+/* #hello 
+   [
+    font-size:50px;
+   ]
+ */
+
+nav{
+    text-align: right;
+    background:#2C3333;
+    margin:0px ;
+    padding: 0px;
+    border-radius: 5px;
+    /* display: flex; */
+ /* margin-left:20% ; */
+ /* margin-right: 220px; */
+  /* color: aliceblue; */
+  /* text-align: center; */
+ }
+ .aaa li{
+    list-style: none;
+   display: inline-block;
+    padding:25px ;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s
+
+ }
+ /* .333{
+    text
+ } */
+
+ nav li:hover  {
+color: #ffffff;
+background-color: rgb(226, 211, 75);
+border-radius: 10px;
+}
+
+/* nav li :hover aaa
+      {
+      color: black;
+
+      } */
+
+
+   

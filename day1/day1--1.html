@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+
+        </style>
+    </head>
+    <body style="color: rgb(233, 157, 42);">
+       
+        <h1>Ahmed</h1>
+        <button onclick="Sum()"> *********</button>
+        <script >
+            function Sum()
+            {
+                var x=parseInt (prompt("enter first Num")) ;
+                var y=parseInt (prompt("enter socend Num")); 
+                var Sum=Res(x,y);
+                alert (Sum);
+            }
+            function Res(x,y)
+            {
+                return x+y;
+            }
+        </script>
+         <script src="./day1--1.js"> </script>
+        
+    </body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html>
+<head>
+  <title>Contact Page</title>
+</head>
+<body>
+  <h1>Contact Page</h1>
+
+  <script>
+    function promptName() {
+      var name = prompt("Please enter your name:");
+      if (name && typeof name === "string" && name.trim() !== "") {
+        promptBirthYear(name);
+      } else {
+        promptName();
+      }
+    }
+
+    function promptBirthYear(name) {
+      var birthYear = prompt("Please enter your birth year:");
+      if (
+        birthYear &&
+        !isNaN(birthYear) &&
+        Number(birthYear) < 2010 &&
+        Number(birthYear) > 0
+      ) {
+        var age = new Date().getFullYear() - Number(birthYear);
+        displayUserInfo(name, birthYear, age);
+      } else {
+        promptBirthYear(name);
+      }
+    }
+
+    function displayUserInfo(name, birthYear, age) {
+      var userInfo = document.createElement("p");
+      userInfo.innerHTML =
+        "Name: " + name + "<br>" +
+        "Birth year: " + birthYear + "<br>" +
+        "Age: " + age;
+
+      document.body.appendChild(userInfo);
+    }
+
+    promptName();
+  </script>
+</body>
+</html> -->
